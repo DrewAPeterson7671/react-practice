@@ -8,7 +8,8 @@ class TicketControl extends React.Component {
     super(props);
     this.state = {
       formVisibleOnPage: false,
-      masterTicketList: []
+      masterTicketList: [],
+      selectedTicket: null
     };
   }
 
@@ -18,7 +19,6 @@ class TicketControl extends React.Component {
       masterTicketList: newMasterTicketList,
       formVisibleOnPage: false
     });
-
   }
 
   handleClick = () => {
